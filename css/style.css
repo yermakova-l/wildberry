@@ -171,9 +171,6 @@ header {
 #img3 { background-image: url("../images/mobile/slider/berries2.jpg"); }
 #img4 { background-image: url("../images/mobile/slider/berries3.jpg"); }
 
-/********** MAIN CONTENT ************/
-main { background-image: url(../images/pattern430.png); }
-
 /********** SERVICES***************/
 .section-header {
   margin-top: 80px;
@@ -186,11 +183,19 @@ main { background-image: url(../images/pattern430.png); }
   text-shadow: 1px 1px 0px #fff; }
 #services {
   width: 98%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
   margin: 0 auto;
   background-color: #efefef;
-    -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 1px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 2px 2px rgba(0, 0, 0, 0.08); }
 .services-item {
@@ -229,8 +234,7 @@ main { background-image: url(../images/pattern430.png); }
   background-color: #efefef;  }
 /********** CATALOG ************/
 #catalog {
-  width: 100%;
-  background-image: url(../images/pattern430.png); }
+  width: 100%; }
 .catalog-section-header h2{
   margin-top: 80px;
   margin-bottom: 50px;
@@ -241,17 +245,7 @@ main { background-image: url(../images/pattern430.png); }
   text-align: center;
   text-shadow: 1px 1px 0px #fff;
 }
-
 /********** PRODUCT CATALOG ************/
-#gallery-section-header h2{
-  margin-top: 60px;
-  margin-bottom: 60px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-  color: #8cc541;
-  text-align: center;
-  text-shadow: 1px 1px 0px #fff; }
 .catalog-products-gallery {
   margin: 0 auto;
   width: 99%; 
@@ -328,14 +322,10 @@ main { background-image: url(../images/pattern430.png); }
       font-weight: 500;
       margin-bottom: 30px;
       text-shadow: 0 1px 0 #fff; }
-
 /*********** GALLERY******************/
-
-
-
 #photogallery {
   width: 100%;
-  padding: 20px 0 20px 0;
+  padding: 1px 0 20px 0;
   background-color: #efefef;
   text-align: center; }
   
@@ -359,10 +349,8 @@ main { background-image: url(../images/pattern430.png); }
 body:after {
   content: url(../images/lightbox2/close.png) url(../images/lightbox2/loading.gif) url(../images/lightbox2/prev.png) url(../images/lightbox2/next.png);
   display: none; }
-
 body.lb-disable-scrolling {
   overflow: hidden; }
-
 .lightboxOverlay {
   position: absolute;
   top: 0;
@@ -372,7 +360,6 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none; }
-
 .lightbox {
   position: absolute;
   left: 0;
@@ -381,15 +368,12 @@ body.lb-disable-scrolling {
   text-align: center;
   line-height: 0;
   font-weight: normal; }
-
 .lightbox .lb-image {
   display: block;
   height: auto;
   max-width: inherit; }
-
 .lightbox a img {
   border: none; }
-
 .lb-outerContainer {
   position: relative;
   background-color: white;
@@ -397,15 +381,12 @@ body.lb-disable-scrolling {
   width: 250px;
   height: 250px;
   margin: 0 auto; }
-
 .lb-outerContainer:after {
   content: "";
   display: table;
   clear: both; }
-
 .lb-container {
   padding: 4px; }
-
 .lb-loader {
   position: absolute;
   top: 43%;
@@ -414,14 +395,12 @@ body.lb-disable-scrolling {
   width: 100%;
   text-align: center;
   line-height: 0; }
-
 .lb-cancel {
   display: block;
   width: 32px;
   height: 32px;
   margin: 0 auto;
   background: url(../images/lightbox2/loading.gif) no-repeat; }
-
 .lb-nav {
   position: absolute;
   top: 0;
@@ -429,19 +408,15 @@ body.lb-disable-scrolling {
   height: 100%;
   width: 100%;
   z-index: 10; }
-
 .lb-container > .nav {
   left: 0; }
-
 .lb-nav a {
   outline: none;
   background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
-
 .lb-prev, .lb-next {
   height: 100%;
   cursor: pointer;
   display: block; }
-
 .lb-nav a.lb-prev {
   width: 34%;
   left: 0;
@@ -453,11 +428,9 @@ body.lb-disable-scrolling {
   -moz-transition: opacity 0.6s;
   -o-transition: opacity 0.6s;
   transition: opacity 0.6s; }
-
 .lb-nav a.lb-prev:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1; }
-
 .lb-nav a.lb-next {
   width: 64%;
   right: 0;
@@ -469,11 +442,9 @@ body.lb-disable-scrolling {
   -moz-transition: opacity 0.6s;
   -o-transition: opacity 0.6s;
   transition: opacity 0.6s; }
-
 .lb-nav a.lb-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1; }
-
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
@@ -485,34 +456,28 @@ body.lb-disable-scrolling {
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px; }
-
 .lb-dataContainer:after {
   content: "";
   display: table;
   clear: both; }
-
 .lb-data {
   padding: 0 4px;
   color: #ccc; }
-
 .lb-data .lb-details {
   width: 85%;
   float: left;
   text-align: left;
   line-height: 1.1em; }
-
 .lb-data .lb-caption {
   font-size: 13px;
   font-weight: bold;
   line-height: 1em; }
-
 .lb-data .lb-number {
   display: block;
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
   color: #999999; }
-
 .lb-data .lb-close {
   display: block;
   float: right;
@@ -527,7 +492,6 @@ body.lb-disable-scrolling {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s; }
-
 .lb-data .lb-close:hover {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -573,7 +537,6 @@ footer {
   height: 32px;
   line-height: 32px; }
  
-
 @media screen and (min-width: 861px) {
   body {
   padding-top: 130px; }
@@ -631,8 +594,10 @@ footer {
   .section-header {
     font-size: 45px; }
   #services {
-      /*padding: 40px 60px;*/
-      max-width: 1100px; }
+      max-width: 1300px; }
+  .services-item {
+    margin: 50px 50px 0 50px;
+  }
   /********** CATALOG ************/
   .product {
     width: 380px;
@@ -677,7 +642,7 @@ footer {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
     justify-content: space-around;
     padding-bottom: 0; }     
