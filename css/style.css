@@ -26,6 +26,7 @@ body {
   font-size: 16px; }
 .clear {
     clear: both; }
+
 /**********  HEADER **********/
 header {
   background: #fff;
@@ -50,8 +51,14 @@ header {
 .top-contacts-bar-item {
   width: 250px;
   height: auto;
-  float: right;
-  margin-right: 80px; }
+  float: right; }
+  #language {
+  width: 150px;
+  margin-left: 20px; }  
+#language img {
+  margin: 15px 20px 0 0;
+  width: 40px;
+}
 .top-contacts-bar-item .icon-block {
   margin-top:15px;
   width: 55px;
@@ -114,6 +121,7 @@ header {
   background-color: #cccc31;
   margin-bottom: 6px; }
 #main_header .active { display: none; }
+
 /********** SLIDER ************/
 #slider {
   height: 520px;
@@ -567,6 +575,10 @@ footer {
   #main_header #menu_collapsed {
     display: none; }
   #main_header .active { display: block; }
+  #main_header nav .invisible {
+    display: none;
+  }
+  
   /*********  SLIDER **********/
   #slider {
       height: 720px; }
@@ -651,5 +663,19 @@ footer {
     height: auto;
     cursor: pointer;
     padding: 20px; }
+
+    /*********  Ukrainian Version ***********/
+
+    .ukr #main_header nav {
+      width: 500px;
+    }
+
+    .ukr .slide .content {
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    }
+
+    .ukr #slider .content h1 {
+      font-weight: 700;
+    }
   
 }
