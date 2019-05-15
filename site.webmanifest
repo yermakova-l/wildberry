@@ -1,0 +1,20 @@
+{
+    "name": "Wild Berry LLC",
+    "short_name": "Wildberry",
+    "icons": [
+        {
+            "src": "./android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#6654a3",
+    "background_color": "#6654a3",
+    "start_url": "https://wildberry.com.ua",
+    "display": "standalone"
+}
